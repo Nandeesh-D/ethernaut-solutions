@@ -1,0 +1,70 @@
+{
+  "transactions": [
+    {
+      "hash": "0x25e3ad25c321e087c2d46e11d0eda206b09f7b8d2a9e04153316716d926c2f81",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x2f5cef0d17d2082998ae80b95fa8d5fb770f5a93",
+      "function": "contribute()",
+      "arguments": [],
+      "transaction": {
+        "from": "0x073c5802eb1f53c0e649f6e4f80ad44f418dd32a",
+        "to": "0x2f5cef0d17d2082998ae80b95fa8d5fb770f5a93",
+        "gas": "0x102ca",
+        "value": "0x1",
+        "input": "0xd7bb99ba",
+        "nonce": "0xe",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    },
+    {
+      "hash": null,
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x2f5cef0d17d2082998ae80b95fa8d5fb770f5a93",
+      "function": null,
+      "arguments": null,
+      "transaction": {
+        "from": "0x073c5802eb1f53c0e649f6e4f80ad44f418dd32a",
+        "to": "0x2f5cef0d17d2082998ae80b95fa8d5fb770f5a93",
+        "gas": "0x98b3",
+        "value": "0x1",
+        "input": "0x",
+        "nonce": "0xf",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    },
+    {
+      "hash": null,
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x2f5cef0d17d2082998ae80b95fa8d5fb770f5a93",
+      "function": "withdraw()",
+      "arguments": [],
+      "transaction": {
+        "from": "0x073c5802eb1f53c0e649f6e4f80ad44f418dd32a",
+        "to": "0x2f5cef0d17d2082998ae80b95fa8d5fb770f5a93",
+        "gas": "0xa3d3",
+        "value": "0x0",
+        "input": "0x3ccfd60b",
+        "nonce": "0x10",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0x25e3ad25c321e087c2d46e11d0eda206b09f7b8d2a9e04153316716d926c2f81"
+  ],
+  "returns": {},
+  "timestamp": 1730312205,
+  "chain": 11155111,
+  "commit": "3192ea7"
+}

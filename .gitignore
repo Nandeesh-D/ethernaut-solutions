@@ -12,3 +12,16 @@ docs/
 
 # Dotenv file
 .env
+
+
+# Ignore test coverage files
+coverage/
+foundry-profile
+
+lib/
+
+# Ignore IDE config files (optional)
+.idea/
+.vscode/
+
+
