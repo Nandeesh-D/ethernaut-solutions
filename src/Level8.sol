@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 
 // Objective:
-// to unlock the vault
+//    to unlock the vault
 contract Vault {
     bool public locked;
     bytes32 private password;

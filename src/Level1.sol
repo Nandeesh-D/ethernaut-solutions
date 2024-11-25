@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+/** Objective:
+ *      To become the owner of the contract
+ */
 contract Fallback {
     mapping(address => uint256) public contributions;
     address public owner;
@@ -31,7 +34,12 @@ contract Fallback {
         payable(owner).transfer(address(this).balance);
     }
 
+
+    /** audit notice : this the function where we can change the owner by paying very less ether
+         *      
+         */
     receive() external payable {
+        
         require(msg.value > 0 && contributions[msg.sender] > 0);
         owner = msg.sender;
     }

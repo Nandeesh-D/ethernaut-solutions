@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+
+/**
+ * Objective:
+ *          To clear the Instance (cleared=true)
+ */
 contract Instance {
     string public password;
     uint8 public infoNum = 42;

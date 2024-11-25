@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+/** Objective:
+ *      To claim the ownership of the contract
+ */
 contract Telephone {
     address public owner;
 
@@ -9,7 +12,7 @@ contract Telephone {
     }
 
     function changeOwner(address _owner) public {
-        if (tx.origin != msg.sender) {
+        if (tx.origin != msg.sender) {   
             owner = _owner;
         }
     }

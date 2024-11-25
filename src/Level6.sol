@@ -2,7 +2,10 @@
 pragma solidity ^0.8.0;
 
 
-// Objective : have to claim the ownership of the Delegation contract 
+/**
+ * Objective:
+ *          The goal of this level is for you to claim ownership of the instance you are given. 
+ */
 contract Delegate {
     address public owner;
 

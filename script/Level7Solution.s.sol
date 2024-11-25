@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 import{Script,console} from "forge-std/Script.sol";
 
 
+/** Use force feeding techniques to break the level  */
 contract ToBeDestructed{
     constructor(address payable _forcedAddress) payable{
         selfdestruct(_forcedAddress);   //send funds to _forcedAddress 

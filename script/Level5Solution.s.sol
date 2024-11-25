@@ -5,6 +5,9 @@ pragma solidity ^0.6.0;
 import{Script,console} from "forge-std/Script.sol";
 import{Token} from "../src/Level5.sol";
 
+/**
+ * To crack the contract objective, take advantage of underflow and overflow 
+ */
 contract Level5 is Script{
         Token token=Token(0xB1a7B25a519b2bd621F306C6D4755876fC5E82D6); //instance
 

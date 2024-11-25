@@ -1,9 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
+/**
+ * Objective :
+        The goal of this level is for you to hack the basic token contract below.
+        
+        You are given 20 tokens to start with and you will beat the level if you somehow manage to get your hands on any additional tokens. 
+        Preferably a very large amount of tokens.
+ */
 
-//objective :
-// Gain more tokens than 20 tokens (intial tokens)
 contract Token {
     mapping(address => uint256) balances;
     uint256 public totalSupply;

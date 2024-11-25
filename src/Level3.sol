@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+/**
+ * Objective:
+ *          This is a coin flipping game where you need to build up your winning streak by guessing the outcome of a coin flip.
+ *          To complete this level you'll need to use your psychic abilities to guess the correct outcome 10 times in a row.
+ */
 contract CoinFlip {
     uint256 public consecutiveWins;
     uint256 lastHash;
@@ -10,10 +15,12 @@ contract CoinFlip {
         consecutiveWins = 0;
     }
 
+    
+
     function flip(bool _guess) public returns (bool) {
         uint256 blockValue = uint256(blockhash(block.number - 1));
 
-        if (lastHash == blockValue) {
+        if (lastHash == blockValue) {   // we can't do multiple calls to the flip function in the same block
             revert();
         }
 

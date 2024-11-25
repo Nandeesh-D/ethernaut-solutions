@@ -1,0 +1,72 @@
+level0:
+
+--> Don store sensitive data on blockchain storage , because it is accessible by everyone
+
+level1:
+
+--> Be careful with fallback function as they'll mislead our logic wif something goes wrong
+
+level2:
+
+--> This gives knowledge about how are constructor's in older versions of Solidity to be precise.
+--> This teaches us to deepen our observation skills
+
+level3:
+
+--> The variables may look random but are actually deterministic and can be exploited if the inputs are known. We will do the same with our Coin Flip contract.
+--> Use the secure methods to generate the random numbers eg: chainlink VRF
+
+level4:
+
+--> Don't use tx.origin for authentication as it leads to pishing attacks
+--> Instead use msg.sender to authenticate
+
+level5:
+
+--> Use a recent version of Solidity, something after 0.8.0 to automatically prevent overflow and underflows.
+--> If you are still on an older version, make use of OZ's SafeMath library.
+--> If you are on Solidity >= 0.8.0, and are sure that the statement won't overflow or underflow, make use of unchecked as it'll save you some gas.
+
+level6:
+
+--> Care should be taken when using a delegatecall() so that it does not accept user inputs either in its parameter or the address to which the call is to be made.
+
+level7:
+
+--> Care should be taken when using a selfdestruct() as it can drain the calling contract. Proper access control mechanisms should be implemented.
+
+level8:
+
+--> All the data stored on the blockchain is publicly accessible so it's recommended to not hardcode any sensitive passwords.
+--> Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
+
+level9:
+
+--> External calls should be used with caution and proper error handling should be implemented on all external calls.
+
+level10:
+
+--> It is recommended to follow the check-effect-interaction pattern in functions making an external call.
+--> Use Openzeppelin's Reentrancy Guard to protect against Reentrancy attacks.
+--> Make sure that the external call is the last thing happening in the contract after all the state-changes.
+    call() should be used with care as it forwards all the gas whereassend and transfer only forwards 2300 gas each.
+--> The recommended method to make external calls is to use call() along with Reentrancy guard.
+
+level11:
+
+--> Never trust external contracts with their interface implementations.
+--> Do not give permissions to msg.sender or any other user to implement their own interfaces and modify the storage and state of your own contract unless explicitly required.
+
+level12:
+
+--> Never store private data on the blockchain even inside private data types as everything is public and can be obtained.
+--> Slot packing helps a lot when you need to optimize your contracts to save some gas.
+
+level13:
+
+--> This level teaches us about data types conversion and casting that may or may not lead to a loss of data and the concept of bit masking.
+--> Critical functions and modifiers should not implement their logic around gas assumptions as they can be easily bypassed.
+
+level14:
+
+--> This level was more CTF-focused and taught us the use of extcodesize and its complications during contract deployment.
