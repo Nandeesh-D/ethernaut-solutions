@@ -70,3 +70,14 @@ level13:
 level14:
 
 --> This level was more CTF-focused and taught us the use of extcodesize and its complications during contract deployment.
+
+level15:
+
+--> If you are inheriting from any token standard or another contract, make sure to implement all the available functions or check that they can't be abused to modify the contract's logic.
+--> Make sure that correctness about approve mechanisms when inherting from a contract
+
+level16:
+
+--> Be carefull when using delegatecall as it modifies the callers storage.
+--> user library keyword for creating libraries as these won't store the state
+--> libraries will not modify caller storage data when the caller uses a delegatecall.
