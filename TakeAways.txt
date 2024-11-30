@@ -81,3 +81,9 @@ level16:
 --> Be carefull when using delegatecall as it modifies the callers storage.
 --> user library keyword for creating libraries as these won't store the state
 --> libraries will not modify caller storage data when the caller uses a delegatecall.
+
+level17:
+
+--> address of the contract can be computed even if we lost the its address
+--> using the formula :
+--> keccak256(abi.encodePacked(0xd6, 0x94, sender, nonce));
