@@ -87,3 +87,13 @@ level17:
 --> address of the contract can be computed even if we lost the its address
 --> using the formula :
 --> keccak256(abi.encodePacked(0xd6, 0x94, sender, nonce));
+
+
+level20:
+
+--> return values should be handled carefully for the low level calls
+--> when using call , make sure that called contract don't have any infinite gas draining actions e.g infinite loops etc..
+
+level21:
+
+--> implementations of interfaces should be handled correctly
