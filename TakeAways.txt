@@ -97,3 +97,7 @@ level20:
 level21:
 
 --> implementations of interfaces should be handled correctly
+
+level22:
+
+--> In solidity, divison will return only the floor of the answer.
