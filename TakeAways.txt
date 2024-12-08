@@ -101,3 +101,11 @@ level21:
 level22:
 
 --> In solidity, divison will return only the floor of the answer.
+--> Don't rely on a single source to get the price of an item
+
+level23:
+
+--> a contract claims to implement the ERC20 spec does not mean it's trust worthy.
+--> When doing calculations related to any sensitive asset such as tokens, 
+    since there are no floating points in solidity, precision is lost as numbers are rounded off leading to exploits such as the one shown above
+--> If user-listed tokens are allowed to be swapped, careful attention should be paid to business-critical logic so that they can't exploit the contract
